@@ -6,15 +6,15 @@ public class ClassSevenTask01 {
     // что слева от двоеточия показывается симметричная комбинация для той,
     // что справа от двоеточия (например, 02:20, 11:11 или 15:51).
     public static void main(String[] args) {
-        int b = 0;
+        int numberCombinations = 0;
 
         for (int h = 0; h <= 23; h++) {
             for (int m = 0; m < 59; m++) {
                 if (h / 10 % 10 == m % 10 & h % 10 == m / 10 % 10) {
-                    b++;
+                    numberCombinations++;
                 }
             }
         }
-        System.out.println("Total " + b + " matches");
+        System.out.println("Total " + numberCombinations + " matches");
     }
 }
